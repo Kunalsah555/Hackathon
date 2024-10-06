@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> <!-- Space-themed font -->
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif; /* Space-themed font */
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.mos.cms.futurecdn.net/hCXYB5YKXzdq2WEHYEe36d.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #fff; /* Default text color */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            color: #ffcc00; /* Golden color for the header */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Shadow effect */
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #ffcc00; /* Golden color for links */
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s; /* Animation */
+        }
+
+        nav a:hover {
+            background-color: #1e90ff; /* Blue color on hover */
+            transform: scale(1.1); /* Scale effect on hover */
+            border-radius: 5px; /* Rounded corners on hover */
+        }
+
+        main {
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for content */
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.7); /* Glow effect */
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            background-color: #0b3d91; /* Deep blue color for section headers */
+            color: #ffcc00; /* Golden color for header text */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            text-align: center;
+        }
+
+        article {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for articles */
+            color: #f0e6d2; /* Light color for article text */
+            padding: 20px;
+            border: 1px solid #ffcc00; /* Golden border */
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+        }
+
+        article h3 {
+            color: #ffcc00; /* Golden color for article headings */
+            margin-top: 0;
+        }
+
+        article a {
+            color: #1e90ff; /* Blue color for article links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+
+        article:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.8); /* Glow effect on hover */
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-top: 2px solid #ffcc00; /* Border at the top */
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect at the top */
+        }
+
+        footer p {
+            color: #ffcc00; /* Golden color for footer text */
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>More</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#articles">Articles</a>
+        <a href="#about">About NASA</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Articles Section -->
+        <section id="articles">
+            <h2>NASA Articles</h2>
+
+            <!-- Sample Article 1 -->
+            <article>
+                <h3>The Mars Rover's Journey</h3>
+                <p>NASA's Perseverance Rover has made groundbreaking discoveries on the Martian surface. Learn more about the mission, its goals, and the amazing technology behind it.</p>
+                <a href="https://mars.nasa.gov/" target="_blank">Read More</a>
+            </article>
+
+            <!-- Sample Article 2 -->
+            <article>
+                <h3>Exploring the Solar System</h3>
+                <p>NASA is constantly pushing the boundaries of exploration. From sending probes to the outer reaches of our solar system to planning human missions to Mars, the future of space exploration is brighter than ever.</p>
+                <a href="https://solarsystem.nasa.gov/" target="_blank">Read More</a>
+            </article>
+        </section>
+
+        <!-- About NASA Section -->
+        <section id="about">
+            <h2>About NASA</h2>
+            <p>The National Aeronautics and Space Administration (NASA) is the United States government agency responsible for the civilian space program as well as for aeronautics and aerospace research.</p>
+            <a href="https://www.nasa.gov/" target="_blank">Learn More</a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 NASA | Powered by Space Enthusiasts</p>
+    </footer>
+
+</body>
+</html>

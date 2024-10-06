@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Space App Challenge</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> <!-- Space-themed font -->
+</head> 
+<style>
+    body {
+        background-image: url('https://wallpapers.com/images/hd/earth-from-outer-space-nay511rcxz64g178.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        color: #fff; /* Set default text color to white */
+        font-family: 'Arial', sans-serif;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the header */
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #f8f0e9; /* Add a border at the bottom */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    }
+
+    h1 {
+        font-family: 'Orbitron', sans-serif; /* Use space-themed font */
+        font-size: 36px;
+        color: #ffcc00; /* Golden color for header text */
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #f8f0e9; /* Light color for links */
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s, transform 0.3s; /* Animation */
+    }
+
+    nav ul li a:hover {
+        color: #ffcc00; /* Change color on hover */
+        text-decoration: underline;
+        transform: scale(1.1); /* Scale effect on hover */
+    }
+
+    main {
+        text-align: center;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 10px; /* Rounded corners */
+        margin: 20px; /* Margin around the main section */
+    }
+
+    h2 {
+        color: #f8f0e9; /* Light color for subheading */
+        font-size: larger;
+    }
+
+    p {
+        color: rgb(246, 233, 218); /* Text color */
+        font-size: medium;
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the footer */
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .footer p {
+        color: rgb(214, 201, 201);
+    }
+
+    #info-panel {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        z-index: 20;
+    }
+
+    #close-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #1e90ff;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #close-btn:hover {
+        background: #104e8b;
+    }
+</style>
+<body>
+    <header>
+        <h1>Near-Earth Object Alert System</h1>
+        <nav>
+            <ul>
+               <li><a href="html.html" target="_main">3D Model of Near-Earth Objects</a></li>
+               <li><a href="asteriod.html" target="_blank">Asteroid Tracker</a></li>
+               <li><a href="neos.html">Near Earth Objects</a></li>              
+               <li><a href="comments.html">Reviews</a></li>
+               <li><a href="team.html">About Us</a></li>
+               <li><a href="aboutnasa.html" target="_main">More</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to our web page where you can get information about near-Earth objects and their impacts</h2>
+        <p>Thanks for visiting us!</p>
+    </main>
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 NASA Space Challenge</p>
+        </footer>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

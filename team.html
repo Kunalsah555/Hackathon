@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> <!-- Space-themed font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        /* General Body Style */
+        body {
+            font-family: 'Orbitron', sans-serif; /* Space-themed font */
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/22/07/09/space-1845550_1280.jpg'); /* Space-themed background */
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #fff; /* Default text color */
+        }
+
+        .heading {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #ffcc00; /* Golden border at the bottom */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Shadow effect */
+        }
+
+        .heading h1 {
+            font-size: 48px;
+            color: #ffcc00; /* Golden color for heading */
+            margin: 0;
+            text-shadow: 2px 2px #000; /* Text shadow for better visibility */
+        }
+
+        .home-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.7); /* Glow effect */
+        }
+
+        .profile-card {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for profile cards */
+            border: 1px solid #ffcc00; /* Golden border */
+            border-radius: 10px;
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5); /* Shadow and glow effect */
+            transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+        }
+
+        .profile-card:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.8); /* Enhanced glow effect on hover */
+        }
+
+        .profile-card .img {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .profile-card .img img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%; /* Circular profile images */
+            border: 2px solid #ffcc00; /* Golden border for profile images */
+        }
+
+        .caption {
+            text-align: center;
+        }
+
+        .caption h3 {
+            color: #ffcc00; /* Golden color for names */
+            margin: 0;
+            text-shadow: 1px 1px #000; /* Text shadow for better visibility */
+        }
+
+        .caption p {
+            color: #f0e6d2; /* Light color for position text */
+            font-size: 16px;
+        }
+
+        /* Social Media Links (if needed) */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-links i {
+            color: #ffcc00; /* Golden color for icons */
+            margin: 0 10px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: color 0.3s, transform 0.3s; /* Animation */
+        }
+
+        .social-links i:hover {
+            color: #1e90ff; /* Blue color on hover */
+            transform: scale(1.2); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading Section -->
+    <div class="heading">
+        <h1>OUR TEAM</h1>
+    </div>
+
+    <!-- Profile Cards Container -->
+    <div class="home-container">
+        <!-- Profile Card 1 -->
+        <div class="profile-card">
+            <div class="img">
+                <img src="1st.jpg" alt="Kunal SH">
+            </div>
+            <div class="caption">
+                <h3>Kunal SH</h3>
+                <p>3D Designer</p>
+                <!-- Uncomment if needed for social media links
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                -->
+            </div>
+        </div>
+
+        <!-- Profile Card 2 -->
+        <div class="profile-card">
+            <div class="img">
+                <img src="2nd.jpg" alt="Sashank Karki">
+            </div>
+            <div class="caption">
+                <h3>Sashank Karki</h3>
+                <p>Lead Programmer</p>
+            </div>
+        </div>
+
+        <!-- Profile Card 3 -->
+        <div class="profile-card">
+            <div class="img">
+                <img src="3rd.jpg" alt="Anushka Mainali">
+            </div>
+            <div class="caption">
+                <h3>Anushka Mainali</h3>
+                <p>Assistant Programmer</p>
+            </div>
+        </div>
+
+        <!-- Profile Card 4 -->
+        <div class="profile-card">
+            <div class="img">
+                <img src="4th.jpg" alt="Prajanya Khanal">
+            </div>
+            <div class="caption">
+                <h3>Prajanya Khanal</h3>
+                <p>Data Resource Manager</p>
+            </div>
+        </div>
+
+        <!-- Profile Card 5 -->
+        <div class="profile-card">
+            <div class="img">
+                <img src="5th.jpg" alt="Saarvin Shah">
+            </div>
+            <div class="caption">
+                <h3>Saarvin Shah</h3>
+                <p>Data Resource Manager</p>
+            </div>
+        </div>
+
+        <!-- Profile Card 6 -->
+        <div class="profile-card">
+            <div class="img">
+                <img src="6th.jpg" alt="Darshan Poudyal">
+            </div>
+            <div class="caption">
+                <h3>Darshan Poudyal</h3>
+                <p>Project Manager</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

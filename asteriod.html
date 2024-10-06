@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asteroid Tracker</title>
+    <link rel="stylesheet" href="asteriod.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> <!-- Space-themed font -->
+</head>
+<style>
+    body {
+        background-image: url('https://cdn.discordapp.com/attachments/1286699125332770986/1287456315039547473/IMG-20240922-WA0003.jpg?ex=66f19ca1&is=66f04b21&hm=18acd12254d75ba4647426973d7be84c084cc800928571c5fdc492cbc8085d9b&');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: 'Orbitron', sans-serif;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent header */
+        padding: 30px;
+        text-align: center;
+        border-bottom: 2px solid #ffcc00; /* Golden border */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Header shadow effect */
+    }
+
+    h1 {
+        font-size: 48px; /* Larger font size */
+        color: #ffcc00; /* Golden color for header text */
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+        color: #f0e6d2; /* Light color for subheader text */
+    }
+
+    main {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #asteroid-list h2 {
+        color: #ffcc00;
+        text-shadow: 2px 2px #000; /* Shadow effect for better visibility */
+    }
+
+    #asteroid-list ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #asteroid-list ul li {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        border: 1px solid #ffcc00; /* Border color */
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 8px; /* Rounded corners */
+        transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+    }
+
+    #asteroid-list ul li:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        box-shadow: 0 4px 15px rgba(255, 204, 0, 0.8); /* Glow effect on hover */
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent footer */
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        border-top: 2px solid #ffcc00; /* Border at the top */
+    }
+
+    footer p {
+        color: #ffcc00; /* Golden color for footer text */
+        margin: 0;
+        font-size: 16px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Asteroid Tracker</h1>
+        <p>Tracking asteroids approaching Earth today!</p>
+    </header>
+
+    <main>
+        <section id="asteroid-list">
+            <h2>Asteroids Approaching Today:</h2>
+            <ul id="asteroids">
+                <!-- Asteroid data will be populated here dynamically through JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data provided by NASA's NEO API</p>
+    </footer>
+
+    <script src="asteriod.js"></script>
+</body>
+</html>

@@ -1,1 +1,2 @@
-# Hackathon
+# SolarSystemThreejs
+# RawsCodersSolarSystemThreejs

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="ourteam.css">
+    <title>Our team member UI</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">
+            <div class="imgBx" style="--i:1;" data-id="content1">
+                <img src="1st.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:2;" data-id="content2">
+                <img src="2nd.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:3;" data-id="content3">
+                <img src="3rd.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:4;" data-id="content4">
+                <img src="4th.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:5;" data-id="content5">
+                <img src="5th.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:6;" data-id="content6">
+                <img src="6th.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx active" id="content1">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="1st.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Kunal SH <br><span>3D designer</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="contentBx" id="content2"></div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="2nd.jpg" alt="">
+                </div>
+                <div class="textBx">
+                    <h2>someone famous <br><span>product designer</span></h2>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contentBx" id="content3"></div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="3rd.jpg" alt="">
+            </div>
+            <div class="textBx">
+                <h2>someone famous <br><span>product designer</span></h2>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contentBx" id="content4"></div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="4th.jpg" alt="">
+        </div>
+        <div class="textBx">
+            <h2>someone famous <br><span>product designer</span></h2>
+            <ul class="sci">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="contentBx" id="content5"></div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="5th.jpg" alt="">
+        </div>
+        <div class="textBx">
+            <h2>someone famous <br><span>product designer</span></h2>
+            <ul class="sci">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="contentBx" id="content6"></div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="6th.jpg" alt="">
+        </div>
+        <div class="textBx">
+            <h2>someone famous <br><span>product designer</span></h2>
+            <ul class="sci">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        let img = document.querySelectorAll('.imgBX');
+        let contentBx = document.querySelectorAll('.contentBX');
+
+        for (let i = 0; i < imgBx.length; i++) {
+            imgBx[i].addEventListener('mouseover', function () {
+                for (let i = 0; i < contentBx.length; i++) {
+                    contentBx[i].className = 'contentBx';
+                }
+                document.getElementById(this.dataset.id).
+                    className = 'contentBx active';
+
+                for (let i = 0; i < imgBx.length; i++) {
+                    imgBx[i].className = 'imgBx';
+                }
+                this.className = 'imgBx active';
+            })
+        }
+    </script>
+</body>
+
+</html>

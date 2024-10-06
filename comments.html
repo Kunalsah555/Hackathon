@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Comments</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"> <!-- Space-themed font -->
+    <style>
+        /* General Body Style */
+        body {
+            font-family: 'Orbitron', sans-serif; /* Space-themed font */
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpaperaccess.com/full/3190183.jpg'); /* Space-themed background */
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #fff; /* Default text color */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            color: #ffcc00; /* Golden color for header text */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ffcc00; /* Golden border at the bottom */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Shadow effect */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for navigation */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffcc00; /* Golden color for links */
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s, transform 0.3s; /* Animation */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        nav ul li a:hover {
+            background-color: #1e90ff; /* Blue color on hover */
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+        main {
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.7); /* Glow effect */
+        }
+
+        h1, h2 {
+            color: #ffcc00; /* Golden color for headings */
+            text-align: center;
+            text-shadow: 2px 2px #000; /* Text shadow for better visibility */
+        }
+
+        #comments-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border: 1px solid #ffcc00; /* Golden border */
+            border-radius: 10px;
+        }
+
+        #comment-input {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #ffcc00; /* Golden border for input */
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: #f8f0e9; /* Light text color */
+            font-family: 'Orbitron', sans-serif; /* Font consistency */
+        }
+
+        #submit-comment {
+            padding: 10px 20px;
+            background-color: #ffcc00; /* Golden color for button */
+            border: none;
+            color: #000;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s; /* Animation */
+        }
+
+        #submit-comment:hover {
+            background-color: #1e90ff; /* Blue color on hover */
+            transform: scale(1.1); /* Scale effect */
+        }
+
+        #comment-list {
+            margin-top: 20px;
+        }
+
+        .comment-item {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for comments */
+            border: 1px solid #ffcc00; /* Golden border for comments */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            color: #f0e6d2; /* Light color for text */
+            box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5); /* Glow effect */
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent footer */
+            color: #ffcc00; /* Golden color for footer text */
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #ffcc00; /* Golden border at the top */
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>User Comments</h1>
+        <nav>
+            <ul>
+                <li><a href="html.html">Home</a></li>
+                <li><a href="neos.html">Near Earth Objects</a></li>
+                <li><a href="asteriod.html" target="_blank">Asteroid Tracker</a></li>
+                <li><a href="team.html">About Us</a></li>
+                <li><a href="aboutnasa.html" target="_main">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>User Reviews</h2>
+        <div id="comments-section">
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button id="submit-comment">Submit</button>
+            <div id="comment-list"></div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 NASA Space Challenges</p>
+    </footer>
+
+    <script src="comments.js"></script>
+</body>
+</html>
